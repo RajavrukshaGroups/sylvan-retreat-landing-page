@@ -1,5 +1,5 @@
 
-//const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+// const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 const API_BASE_URL ='https://rrplserver.rajavrukshagroup.in'
 /**
  * Submits enquiry data to the backend endpoint.
