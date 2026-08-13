@@ -70,7 +70,7 @@ export const Hero = ({ onFormSuccess }) => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center filter brightness-75 transition-all duration-1000 ease-in-out ${
+          className={`absolute inset-0 bg-cover bg-center filter brightness-45 transition-all duration-1000 ease-in-out ${
             index === currentSlide ? 'opacity-100 scale-105' : 'opacity-100 scale-100 pointer-events-none'
           }`}
           style={{ backgroundImage: `url("${slide.image}")` }}

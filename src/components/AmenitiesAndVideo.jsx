@@ -83,12 +83,12 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
               <div className="inline-flex items-center justify-center gap-3">
                 <span className="h-[1px] w-6 bg-[#9b7328]"></span>
                 <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#0a2214] tracking-wider uppercase">
-                  EXPLORE THROUGH VIDEO
+                  EXPLORE SITE IMAGES
                 </h2>
                 <span className="h-[1px] w-6 bg-[#9b7328]"></span>
               </div>
               <p className="text-xs text-stone-600 mt-1">
-                Take a 4K Virtual Drone Tour of 58-Acre Samrudhi Sylvan Retreat
+                View 58-Acre Samrudhi Sylvan Retreat
               </p>
             </div>
 
@@ -111,7 +111,7 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
                 </div>
 
                 <span className="mt-4 text-xs sm:text-sm font-semibold text-white tracking-widest uppercase bg-[#0a2214]/80 px-4 py-1.5 rounded-full border border-[#e6c278]/50">
-                  CLICK TO PLAY 4K DRONE TOUR
+                  CLICK TO VIEW
                 </span>
               </div>
             </div>

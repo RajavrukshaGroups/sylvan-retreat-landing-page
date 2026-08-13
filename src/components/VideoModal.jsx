@@ -61,7 +61,7 @@ export const VideoModal = ({ isOpen, onClose }) => {
           <div className="flex items-center gap-2 pr-4">
             <Film className="w-5 h-5 text-[#e6c278] shrink-0" />
             <span className="text-xs sm:text-sm font-serif font-bold text-white tracking-wider uppercase truncate">
-              SAMRUDHI SYLVAN RETREAT — 4K VIDEO TOUR
+              SAMRUDHI SYLVAN RETREAT
             </span>
           </div>
           <button
@@ -85,15 +85,15 @@ export const VideoModal = ({ isOpen, onClose }) => {
           />
 
           {/* Playing indicator */}
-          {isPlaying && (
+          {/* {isPlaying && (
             <div className="absolute top-4 left-4 bg-red-600/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow">
               <span className="w-2 h-2 rounded-full bg-white animate-ping"></span>
               <span>PLAYING 4K DRONE TOUR</span>
             </div>
-          )}
+          )} */}
 
           {/* Center Play/Pause button */}
-          <button
+          {/* <button
             onClick={() => setIsPlaying(!isPlaying)}
             className="w-16 h-16 rounded-full bg-black/50 backdrop-blur-md border border-white/50 text-white flex items-center justify-center hover:scale-110 hover:bg-[#e6c278] hover:text-[#081a0e] transition-all cursor-pointer shadow-2xl z-10"
           >
@@ -102,10 +102,10 @@ export const VideoModal = ({ isOpen, onClose }) => {
             ) : (
               <Play className="w-8 h-8 fill-current ml-1" />
             )}
-          </button>
+          </button> */}
 
           {/* Bottom Video Controls Overlay Bar */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between text-white text-xs">
+          {/* <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between text-white text-xs">
             <div className="flex items-center gap-3">
               <button onClick={() => setIsPlaying(!isPlaying)} className="cursor-pointer">
                 {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
@@ -118,11 +118,11 @@ export const VideoModal = ({ isOpen, onClose }) => {
               </span>
             </div>
             <span className="text-[11px] text-[#e6c278] font-semibold">4K Ultra HD</span>
-          </div>
+          </div> */}
         </div>
 
         {/* Clip Selector Strip */}
-        <div className="p-3 sm:p-4 bg-[#0a2214] border-t border-[#e6c278]/20 grid grid-cols-2 sm:grid-cols-4 gap-2.5 shrink-0 overflow-x-auto">
+        <div className="p-3 sm:p-4 bg-[#0a2214] border-t border-[#e6c278]/20  flex flex-row justify-center overflow-x-auto">
           {clips.map((clip) => (
             <button
               key={clip.id}
@@ -130,7 +130,7 @@ export const VideoModal = ({ isOpen, onClose }) => {
                 setActiveClip(clip.id);
                 setIsPlaying(true);
               }}
-              className={`p-2 rounded-lg border text-left flex items-center gap-2.5 transition-all cursor-pointer ${
+              className={`p-2 rounded-medium border text-left flex items-center gap-2.5 transition-all cursor-pointer ${
                 activeClip === clip.id
                   ? 'bg-[#e6c278]/20 border-[#e6c278] text-white font-bold'
                   : 'bg-[#081a0e] border-stone-800 text-stone-400 hover:border-stone-600'
@@ -144,12 +144,12 @@ export const VideoModal = ({ isOpen, onClose }) => {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="overflow-hidden">
+              {/* <div className="overflow-hidden">
                 <span className="text-[11px] block truncate leading-tight text-stone-200">
                   {clip.title}
                 </span>
                 <span className="text-[10px] text-[#e6c278]">{clip.duration}</span>
-              </div>
+              </div> */}
             </button>
           ))}
         </div>

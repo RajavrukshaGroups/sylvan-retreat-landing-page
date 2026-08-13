@@ -52,19 +52,19 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-[#0a2214] text-white border-t border-[#e6c278]/30">
+    <section id="contact" className="py-16 bg-[#f5f1e8] text-white border-t border-[#e6c278]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
-            <span className="h-[1px] w-8 bg-[#e6c278]"></span>
-            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#e6c278] tracking-wider uppercase">
+            <span className="h-[1px] w-8 bg-[#011403ff]"></span>
+            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#011403ff] tracking-wider uppercase">
               VISIT US / ENQUIRE
             </h2>
-            <span className="h-[1px] w-8 bg-[#e6c278]"></span>
+            <span className="h-[1px] w-8 bg-[#011403ff]"></span>
           </div>
-          <p className="text-stone-300 text-sm sm:text-base max-w-xl mx-auto font-light">
+          <p className="text-stone-900 text-medium sm:text-base max-w-xl mx-auto font-light">
             Book a complimentary guided site visit with cab pick-up or speak with our farmland investment consultants today.
           </p>
         </div>

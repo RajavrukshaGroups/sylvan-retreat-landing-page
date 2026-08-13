@@ -43,7 +43,7 @@ export const SiteLocationMap = ({ onOpenEnquiry }) => {
       : landmarks.filter((item) => item.category === selectedCategory);
 
   return (
-    <section id="location" className="py-16 bg-[#081a0e] text-white border-y border-[#e6c278]/30 relative overflow-hidden">
+    <section id="location" className="py-16 bg-[#f5f1e8] text-white border-y border-[#e6c278]/30 relative overflow-hidden">
       {/* Background Accent Gradients */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#e6c278]/5 rounded-full filter blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#0a2314]/50 rounded-full filter blur-3xl pointer-events-none" />
@@ -53,13 +53,13 @@ export const SiteLocationMap = ({ onOpenEnquiry }) => {
         {/* Section Header */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
-            <span className="h-[1px] w-8 bg-[#e6c278]"></span>
-            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#e6c278] tracking-wider uppercase">
+            <span className="h-[1px] w-8 bg-[#011403ff]"></span>
+            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#011403ff] tracking-wider uppercase">
               LOCATION & SITE MAP
             </h2>
-            <span className="h-[1px] w-8 bg-[#e6c278]"></span>
+            <span className="h-[1px] w-8 bg-[#011403ff]"></span>
           </div>
-          <p className="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto font-light">
+          <p className="text-stone-900 text-sm sm:text-base max-w-2xl mx-auto font-light">
             Strategically located in Doddaballapura, North Bangalore — seamless connection to KIAL Airport, Highway SH-09, Nandi Hills, and ISHA Foundation.
           </p>
         </div>

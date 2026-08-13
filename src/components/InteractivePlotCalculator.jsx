@@ -13,19 +13,19 @@ export const InteractivePlotCalculator = ({ onOpenEnquiry }) => {
   const sqft = (sizeGuntas * 1089).toLocaleString('en-IN');
 
   return (
-    <section className="py-16 bg-[#0a2214] text-white border-y border-[#e6c278]/30">
+    <section className="py-16 bg-[#ebe9e0ff] text-white border-y border-[#e6c278]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
-            <span className="h-[1px] w-8 bg-[#e6c278]"></span>
-            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#e6c278] tracking-wide uppercase">
+            <span className="h-[1px] w-8 bg-[#221d0aff]"></span>
+            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#221d0aff] tracking-wide uppercase">
               FARMLAND COST & ESTIMATOR
             </h2>
-            <span className="h-[1px] w-8 bg-[#e6c278]"></span>
+            <span className="h-[1px] w-8 bg-[#221d0aff]"></span>
           </div>
-          <p className="text-stone-300 text-sm max-w-xl mx-auto font-light">
+          <p className="text-stone-900 text-medium max-w-xl mx-auto font-light">
             Customize your farmland plot area to view budget estimates, sq. ft. conversion, and organic crop yield potential.
           </p>
         </div>

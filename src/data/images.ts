@@ -9,17 +9,21 @@ import droneThumbImg from '../assets/images/video_drone_thumb_1786596120821.jpg'
 import HeroImg1 from '../assets/images/hero-1.png'
 import HeroImg2 from "../assets/images/hero-2.png"
 import galImg1 from "../assets/images/gal-10.png"
+import gallImg1 from "../assets/images/gal-1.png"
+import galImg2 from "../assets/images/gal-6.png"
+import galImg3 from "../assets/images/gal-6.png"
+import galImg4 from "../assets/images/gal-4.png"
 
 
 export const IMAGES = {
   heroBg: heroBgImg,
   heroBg1: HeroImg1,
-  heroBg2: HeroImg1,
-  heroBgSlides: [HeroImg1, HeroImg1],
+  heroBg2: HeroImg2,
+  heroBgSlides: [HeroImg2, HeroImg1],
   woodenHouse: galImg1,
-  mangoHarvest: mangoHarvestImg,
-  beekeepingHoney: honeyImg,
-  cattleGrazing: cattleImg,
+  mangoHarvest: gallImg1,
+  beekeepingHoney: galImg2,
+  cattleGrazing: galImg3,
   droneThumb: galImg1,
   
   // Gallery images with serene farmland vistas

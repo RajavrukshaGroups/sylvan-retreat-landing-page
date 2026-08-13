@@ -30,7 +30,7 @@ export const StatsBanner = () => {
   };
 
   return (
-    <section className="bg-[#0b2415] text-white py-12 border-b border-[#e6c278]/30">
+    <section className="bg-[#f2f1ebff] text-white py-12 border-b border-[#e6c278]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* 6 Grid items */}
@@ -38,7 +38,7 @@ export const StatsBanner = () => {
           {STATS_BANNER_ITEMS.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col items-center text-center p-4 rounded-xl bg-[#081a0e]/60 border border-[#e6c278]/20 hover:border-[#e6c278]/60 transition-all duration-300 group"
+              className="flex flex-col items-center text-center p-4 rounded-xl bg-[#24210bff] border border-[#e6c278]/20 hover:border-[#e6c278]/60 transition-all duration-300 group"
             >
               <div className="p-3 rounded-full bg-[#0a2314] border border-[#e6c278]/30 group-hover:scale-110 transition-transform mb-3">
                 {getIcon(item.iconName)}
