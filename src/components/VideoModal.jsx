@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { X, Play, Pause, Volume2, VolumeX, Film } from 'lucide-react';
 import { IMAGES } from '../data/images';
 
+import gallImg1 from "../assets/images/gal-1.png"
+import gallImg2 from "../assets/images/gal-2.png"
+import gallImg4 from "../assets/images/gal-4.png"
+import gallImg6 from "../assets/images/gal-6.png"
+
+
 export const VideoModal = ({ isOpen, onClose }) => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
@@ -16,24 +22,30 @@ export const VideoModal = ({ isOpen, onClose }) => {
       duration: '2:15',
       image: IMAGES.droneThumb,
     },
-    // {
-    //   id: 'cottage',
-    //   title: 'Wooden Retreat House Tour',
-    //   duration: '1:45',
-    //   image: IMAGES.woodenHouse,
-    // },
+    {
+      id: 'cottage',
+      title: 'Wooden Retreat House Tour',
+      duration: '1:45',
+      image: gallImg1,
+    },
     {
       id: 'mango',
       title: 'Organic Mango Orchards',
       duration: '1:10',
-      image: IMAGES.mangoHarvest,
+      image: gallImg2,
     },
     {
       id: 'cattle',
       title: 'Ethical Beekeeping & Livestock',
       duration: '1:30',
-      image: IMAGES.beekeepingHoney,
+      image: gallImg4,
     },
+    // {
+    //   id: 'cattle',
+    //   title: 'Ethical Beekeeping & Livestock',
+    //   duration: '1:30',
+    //   image: gallImg6,
+    // },
   ];
 
   const currentClip = clips.find((c) => c.id === activeClip) || clips[0];

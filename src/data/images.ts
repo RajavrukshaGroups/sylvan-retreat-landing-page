@@ -10,9 +10,7 @@ import HeroImg1 from '../assets/images/hero-1.png'
 import HeroImg2 from "../assets/images/hero-2.png"
 import galImg1 from "../assets/images/gal-10.png"
 import gallImg1 from "../assets/images/gal-1.png"
-import galImg2 from "../assets/images/gal-6.png"
-import galImg3 from "../assets/images/gal-6.png"
-import galImg4 from "../assets/images/gal-4.png"
+import galImg2 from "../assets/images/gal-2.png"
 
 
 export const IMAGES = {
@@ -21,9 +19,9 @@ export const IMAGES = {
   heroBg2: HeroImg2,
   heroBgSlides: [HeroImg2, HeroImg1],
   woodenHouse: galImg1,
-  mangoHarvest: gallImg1,
-  beekeepingHoney: galImg2,
-  cattleGrazing: galImg3,
+  mangoHarvest: mangoHarvestImg,
+  beekeepingHoney: honeyImg,
+  cattleGrazing: cattleImg,
   droneThumb: galImg1,
   
   // Gallery images with serene farmland vistas

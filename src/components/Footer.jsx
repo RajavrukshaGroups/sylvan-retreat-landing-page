@@ -117,7 +117,7 @@ export const Footer = () => {
 
         {/* Bottom Disclaimer */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-2">
-          <div>© 2025 Samrudhi Sylvan Retreat. All Rights Reserved.</div>
+          <div>© 2026 Samrudhi Sylvan Retreat. All Rights Reserved.</div>
           <div>*Price mentioned is indicative and subject to change.</div>
         </div>
 
