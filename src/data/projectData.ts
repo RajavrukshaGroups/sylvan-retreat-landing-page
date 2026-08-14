@@ -50,12 +50,12 @@ export const STATS = [
 ];
 
 export const STATS_BANNER_ITEMS = [
-  { id: '1', value: '58 ACRES', label: 'VAST PROJECT AREA', subtext: 'Gated Organic Farmland', iconName: 'Trees' },
-  { id: '2', value: '30+ PLOTS', label: 'MANAGED FARMLAND', subtext: '20 Guntas & 1 Acre Plots', iconName: 'Home' },
+  { id: '1', value: '5 ACRES', label: 'VAST PROJECT AREA', subtext: 'Gated Organic Farmland', iconName: 'Trees' },
+  //{ id: '2', value: '30+ PLOTS', label: 'MANAGED FARMLAND', subtext: '20 Guntas & 1 Acre Plots', iconName: 'Home' },
   { id: '3', value: '24/7', label: 'GATED SECURITY', subtext: 'Fencing & Security Guards', iconName: 'ShieldCheck' },
-  { id: '4', value: 'LUXURY', label: 'CLUB HOUSE', subtext: 'Swimming Pool & Retreat', iconName: 'Building' },
+  //{ id: '4', value: 'LUXURY', label: 'CLUB HOUSE', subtext: 'Swimming Pool & Retreat', iconName: 'Building' },
   { id: '5', value: 'ORGANIC', label: 'MANGO & BEEKEEPING', subtext: 'Ethical Agriculture', iconName: 'Sparkles' },
-  { id: '6', value: 'BANK LOAN', label: 'CLEAR TITLES', subtext: '100% Legal Transparency', iconName: 'Award' },
+  //{ id: '6', value: 'BANK LOAN', label: 'CLEAR TITLES', subtext: '100% Legal Transparency', iconName: 'Award' },
 ];
 
 export const LOCATION_ADVANTAGES: LocationAdvantage[] = [
@@ -79,24 +79,24 @@ export const HIGHLIGHTS: HighlightItem[] = [
     description: 'The project spans an impressive area of 58 acres, providing ample space for diverse development and amenities.',
     iconName: 'Maximize2',
   },
-  {
-    id: '2',
-    title: "Wooden House Retreat: Nature's Escape",
-    description: 'Rajavruksha will engage wooden house for rental basis in weekend entertainment program.',
-    iconName: 'Home',
-  },
+  // {
+  //   id: '2',
+  //   title: "Wooden House Retreat: Nature's Escape",
+  //   description: 'Rajavruksha will engage wooden house for rental basis in weekend entertainment program.',
+  //   iconName: 'Home',
+  // },
   {
     id: '3',
     title: "Enjoy Mango's Natural Richness!",
     description: 'Our vibrant orchard boasts mango varieties like Malgova, Totapuri, Mallika, and Banganapalli, each tree contributing to a rich, flavorful harvest.',
     iconName: 'Sun',
   },
-  {
-    id: '4',
-    title: 'Skillful Passion Fruit Farming Practices',
-    description: "Our passion fruit cultivation activities are characterized by innovation, expertise, and a deep appreciation for this exotic fruit's unique flavor and nutritional benefits.",
-    iconName: 'Sparkles',
-  },
+  // {
+  //   id: '4',
+  //   title: 'Skillful Passion Fruit Farming Practices',
+  //   description: "Our passion fruit cultivation activities are characterized by innovation, expertise, and a deep appreciation for this exotic fruit's unique flavor and nutritional benefits.",
+  //   iconName: 'Sparkles',
+  // },
   {
     id: '5',
     title: 'Rich Soil and Fertile Land',
@@ -125,13 +125,13 @@ export const SPECIAL_ACTIVITIES = [
     description: 'Ethical honey production supports biodiversity while generating high-value products like raw honey, beeswax, and royal jelly. The global honey market is booming, offering lucrative opportunities for local farmers.',
     image: IMAGES.beekeepingHoney,
   },
-  {
-    id: '2',
-    title: 'Animal Husbandry',
-    subtitle: 'Ethical Livestock Care',
-    description: 'A well-managed livestock farm ensures quality dairy and wool production, creating sustainable income sources. The demand for organic, ethically raised products is rising, providing economic stability for farmers.',
-    image: IMAGES.cattleGrazing,
-  },
+  // {
+  //   id: '2',
+  //   title: 'Animal Husbandry',
+  //   subtitle: 'Ethical Livestock Care',
+  //   description: 'A well-managed livestock farm ensures quality dairy and wool production, creating sustainable income sources. The demand for organic, ethically raised products is rising, providing economic stability for farmers.',
+  //   image: IMAGES.cattleGrazing,
+  // },
   {
     id: '3',
     title: 'Mango Farming',
@@ -142,8 +142,8 @@ export const SPECIAL_ACTIVITIES = [
 ];
 
 export const AMENITIES: Amenity[] = [
-  { id: '1', title: 'Paver Pathways', iconName: 'Footprints' },
-  { id: '2', title: 'Playground', iconName: 'Smile' },
+  //{ id: '1', title: 'Paver Pathways', iconName: 'Footprints' },
+  //{ id: '2', title: 'Playground', iconName: 'Smile' },
   { id: '3', title: 'Private Water Supply', iconName: 'Droplet' },
   { id: '4', title: 'Water System', iconName: 'Waves' },
   { id: '5', title: 'Security & Fencing', iconName: 'Shield' },

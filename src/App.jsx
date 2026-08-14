@@ -14,6 +14,7 @@ import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { EnquiryModal } from './components/EnquiryModal';
 import { VideoModal } from './components/VideoModal';
+import { PrivacyPolicyModal } from './components/PrivacyPolicyModal';
 import { Calendar, Phone, CheckCircle2 } from 'lucide-react';
 import { PROJECT_INFO } from './data/projectData';
 import {SiteHighlightSection} from "./components/SiteHighlightSection"
@@ -25,6 +26,7 @@ export default function App() {
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(!isRegistered);
   const [modalInterest, setModalInterest] = useState(undefined);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
   const [toast, setToast] = useState(null);
 
   const triggerToast = (message) => {
@@ -61,7 +63,7 @@ export default function App() {
         {/* <SiteHighlightSection onOpenEnquiry={handleOpenEnquiry}/> */}
 
         {/* 6-Card Stats Banner */}
-        <StatsBanner />
+        {/* <StatsBanner /> */}
 
         {/* Location Advantage Strip */}
         <LocationBanner />
@@ -81,7 +83,7 @@ export default function App() {
         <WhyChooseUs />
 
         {/* Interactive Farmland Plot Calculator & Budget Estimator */}
-        <InteractivePlotCalculator onOpenEnquiry={handleOpenEnquiry} />
+        {/* <InteractivePlotCalculator onOpenEnquiry={handleOpenEnquiry} /> */}
 
         {/* Site Location & Route Map */}
         <SiteLocationMap onOpenEnquiry={handleOpenEnquiry} />
@@ -94,7 +96,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer onOpenPrivacy={() => setIsPrivacyModalOpen(true)} />
 
       {/* Sticky Mobile Bottom CTA Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#081a0e]/95 backdrop-blur-md border-t border-[#e6c278]/40 p-3 sm:hidden flex items-center gap-3 shadow-2xl">
@@ -127,6 +129,11 @@ export default function App() {
       <VideoModal
         isOpen={isVideoModalOpen}
         onClose={() => setIsVideoModalOpen(false)}
+      />
+
+      <PrivacyPolicyModal 
+        isOpen={isPrivacyModalOpen}
+        onClose={() => setIsPrivacyModalOpen(false)}
       />
 
       {/* Toast Notification */}

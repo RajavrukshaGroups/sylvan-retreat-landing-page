@@ -52,19 +52,19 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-[#f5f1e8] text-white border-t border-[#e6c278]/30">
+    <section id="contact" className="py-16 bg-[#fbf9f4] text-stone-900 border-t border-[#e6c278]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
-            <span className="h-[1px] w-8 bg-[#011403ff]"></span>
-            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#011403ff] tracking-wider uppercase">
+            <span className="h-[1px] w-8 bg-[#0a2214]"></span>
+            <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#0a2214] tracking-wider uppercase">
               VISIT US / ENQUIRE
             </h2>
-            <span className="h-[1px] w-8 bg-[#011403ff]"></span>
+            <span className="h-[1px] w-8 bg-[#0a2214]"></span>
           </div>
-          <p className="text-stone-900 text-medium sm:text-base max-w-xl mx-auto font-light">
+          <p className="text-stone-600 text-medium sm:text-base max-w-xl mx-auto font-normal">
             Book a complimentary guided site visit with cab pick-up or speak with our farmland investment consultants today.
           </p>
         </div>
@@ -76,8 +76,8 @@ export const ContactSection = () => {
           <div className="lg:col-span-5 space-y-6">
             
             {/* Direct Connect Box */}
-            <div className="bg-[#081a0e] p-6 rounded-2xl border border-[#e6c278]/40 shadow-xl space-y-6">
-              <h3 className="text-lg font-serif font-bold text-[#e6c278] border-b border-[#e6c278]/20 pb-3">
+            <div className="bg-white p-6 rounded-3xl border border-stone-200 shadow-xl space-y-6">
+              <h3 className="text-lg font-serif font-bold text-[#154726] border-b border-stone-200 pb-3">
                 GET IN TOUCH DIRECTLY
               </h3>
 
@@ -86,16 +86,16 @@ export const ContactSection = () => {
                 {/* Phone */}
                 <a
                   href={`tel:${PROJECT_INFO.phone}`}
-                  className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#0b2415] border border-[#e6c278]/20 hover:border-[#e6c278] transition-all group"
+                  className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#fbf9f4] border border-stone-200 hover:border-[#d96500] hover:bg-orange-50 transition-all group"
                 >
-                  <div className="p-2.5 rounded-lg bg-[#081a0e] border border-[#e6c278]/30 text-[#e6c278] group-hover:scale-110 transition-transform">
+                  <div className="p-2.5 rounded-lg bg-white border border-stone-200 text-[#154726] group-hover:scale-110 transition-transform">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] text-stone-400 block font-medium">
+                    <span className="text-[11px] text-stone-500 block font-bold uppercase tracking-wider">
                       Call / WhatsApp Us
                     </span>
-                    <span className="text-sm font-bold text-white group-hover:text-[#e6c278] transition-colors">
+                    <span className="text-sm font-bold text-stone-900 group-hover:text-[#d96500] transition-colors">
                       {PROJECT_INFO.displayPhone}
                     </span>
                   </div>
@@ -104,39 +104,39 @@ export const ContactSection = () => {
                 {/* Email */}
                 <a
                   href={`mailto:${PROJECT_INFO.email}`}
-                  className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#0b2415] border border-[#e6c278]/20 hover:border-[#e6c278] transition-all group"
+                  className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#fbf9f4] border border-stone-200 hover:border-[#d96500] hover:bg-orange-50 transition-all group"
                 >
-                  <div className="p-2.5 rounded-lg bg-[#081a0e] border border-[#e6c278]/30 text-[#e6c278] group-hover:scale-110 transition-transform">
+                  <div className="p-2.5 rounded-lg bg-white border border-stone-200 text-[#154726] group-hover:scale-110 transition-transform">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] text-stone-400 block font-medium">
+                    <span className="text-[11px] text-stone-500 block font-bold uppercase tracking-wider">
                       Email Inquiry
                     </span>
-                    <span className="text-sm font-bold text-white group-hover:text-[#e6c278] transition-colors">
+                    <span className="text-sm font-bold text-stone-900 group-hover:text-[#d96500] transition-colors">
                       {PROJECT_INFO.email}
                     </span>
                   </div>
                 </a>
 
                 {/* Office Address */}
-                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#0b2415] border border-[#e6c278]/20">
-                  <div className="p-2.5 rounded-lg bg-[#081a0e] border border-[#e6c278]/30 text-[#e6c278] shrink-0">
+                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#fbf9f4] border border-stone-200">
+                  <div className="p-2.5 rounded-lg bg-white border border-stone-200 text-[#154726] shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[11px] text-stone-400 block font-medium">
+                    <span className="text-[11px] text-stone-500 block font-bold uppercase tracking-wider">
                       Corporate Office Address
                     </span>
-                    <p className="text-xs font-semibold text-stone-200 mt-0.5 leading-relaxed">
+                    <p className="text-xs font-bold text-stone-800 mt-0.5 leading-relaxed">
                       {PROJECT_INFO.officeAddress}
                     </p>
                   </div>
                 </div>
 
                 {/* Timings */}
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#081a0e] border border-[#e6c278]/15 text-xs text-stone-300">
-                  <Clock className="w-4 h-4 text-[#e6c278] shrink-0" />
+                <div className="flex items-center gap-3.5 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200/60 text-xs font-bold text-emerald-900">
+                  <Clock className="w-4 h-4 text-emerald-700 shrink-0" />
                   <span>Office Hours: 9:00 AM – 7:00 PM (Open All Days)</span>
                 </div>
 
@@ -144,12 +144,12 @@ export const ContactSection = () => {
             </div>
 
             {/* Free Cab Pickup Highlight Banner */}
-            <div className="bg-[#f4ebd9] text-[#0a2214] p-5 rounded-2xl border border-[#e6c278] shadow-lg flex items-center gap-4">
-              <div className="p-3 bg-[#0a2214] rounded-xl text-[#e6c278] shrink-0">
+            <div className="bg-[#fff8ea] text-[#154726] p-5 rounded-2xl border border-[#d96500]/30 shadow-lg flex items-center gap-4">
+              <div className="p-3 bg-white rounded-xl text-[#d96500] border border-[#d96500]/20 shrink-0">
                 <Calendar className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-xs font-serif font-bold uppercase tracking-wider text-[#9b7328]">
+                <h4 className="text-xs font-serif font-bold uppercase tracking-wider text-[#d96500]">
                   COMPLIMENTARY CAB PICKUP
                 </h4>
                 <p className="text-xs font-semibold mt-0.5 leading-snug">
@@ -161,23 +161,23 @@ export const ContactSection = () => {
           </div>
 
           {/* Right Column: Site Visit & Booking Form (7 Cols) */}
-          <div className="lg:col-span-7 bg-[#081a0e] p-6 sm:p-8 rounded-2xl border border-[#e6c278]/40 shadow-2xl">
-            <h3 className="text-xl font-serif font-bold text-[#e6c278] mb-1">
+          <div className="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-2xl">
+            <h3 className="text-xl font-serif font-bold text-[#154726] mb-1">
               BOOK A GUIDED SITE VISIT
             </h3>
-            <p className="text-xs text-stone-300 mb-6">
+            <p className="text-xs text-stone-600 mb-6 font-medium">
               Fill in your details below. Our team will contact you within 15 minutes to confirm plot availability.
             </p>
 
             {isSubmitted ? (
-              <div className="p-8 bg-[#0b2415] border border-emerald-500/50 rounded-xl text-center space-y-3 animate-fadeIn">
-                <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto" />
-                <h4 className="text-lg font-serif font-bold text-white">
+              <div className="p-8 bg-emerald-50 border border-emerald-200 rounded-2xl text-center space-y-3 animate-fadeIn">
+                <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
+                <h4 className="text-lg font-serif font-bold text-stone-900">
                   Thank You for Your Interest!
                 </h4>
-                <p className="text-xs text-stone-300 max-w-md mx-auto">
+                <p className="text-xs text-stone-700 max-w-md mx-auto">
                   Our farmland consultant will call you shortly on{' '}
-                  <strong className="text-[#e6c278]">{formData.phone || 'your phone number'}</strong>{' '}
+                  <strong className="text-[#154726]">{formData.phone || 'your phone number'}</strong>{' '}
                   to arrange your site visit and share price sheets.
                 </p>
               </div>
@@ -187,8 +187,8 @@ export const ContactSection = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Full Name */}
                   <div>
-                    <label className="block text-xs font-semibold text-stone-300 mb-1">
-                      Full Name <span className="text-amber-400">*</span>
+                    <label className="block text-xs font-bold text-stone-800 mb-1">
+                      Full Name <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="text"
@@ -196,14 +196,14 @@ export const ContactSection = () => {
                       placeholder="Enter your full name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-[#0b2415] border border-stone-700 rounded-lg text-xs text-white placeholder-stone-500 focus:outline-none focus:border-[#e6c278]"
+                      className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs"
                     />
                   </div>
 
                   {/* Mail / Email */}
                   <div>
-                    <label className="block text-xs font-semibold text-stone-300 mb-1">
-                      Mail / Email Address <span className="text-amber-400">*</span>
+                    <label className="block text-xs font-bold text-stone-800 mb-1">
+                      Mail / Email Address <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="email"
@@ -211,15 +211,15 @@ export const ContactSection = () => {
                       placeholder="name@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-[#0b2415] border border-stone-700 rounded-lg text-xs text-white placeholder-stone-500 focus:outline-none focus:border-[#e6c278]"
+                      className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs"
                     />
                   </div>
                 </div>
 
                 {/* Phone Number */}
                 <div>
-                  <label className="block text-xs font-semibold text-stone-300 mb-1">
-                    Phone Number <span className="text-amber-400">*</span>
+                  <label className="block text-xs font-bold text-stone-800 mb-1">
+                    Phone Number <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="tel"
@@ -233,13 +233,13 @@ export const ContactSection = () => {
                       const val = e.target.value.replace(/\D/g, '');
                       if (val.length <= 10) setFormData({ ...formData, phone: val });
                     }}
-                    className="w-full px-3.5 py-2.5 bg-[#0b2415] border border-stone-700 rounded-lg text-xs text-white placeholder-stone-500 focus:outline-none focus:border-[#e6c278]"
+                    className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs"
                   />
                 </div>
 
                 {/* Message */}
                 <div>
-                  <label className="block text-xs font-semibold text-stone-300 mb-1">
+                  <label className="block text-xs font-bold text-stone-800 mb-1">
                     Message / Requirement
                   </label>
                   <textarea
@@ -247,20 +247,20 @@ export const ContactSection = () => {
                     placeholder="Write your message or inquiry details here..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-3.5 py-2.5 bg-[#0b2415] border border-stone-700 rounded-lg text-xs text-white placeholder-stone-500 focus:outline-none focus:border-[#e6c278]"
+                    className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3 px-6 bg-gradient-to-r from-[#e6c278] to-[#cba153] hover:from-[#f0d08a] hover:to-[#dbb060] text-[#0a2214] font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg flex items-center justify-center gap-2 cursor-pointer transition-all"
+                  className="w-full py-4 px-6 bg-gradient-to-r from-[#ff9f00] via-[#f78000] to-[#ea580c] hover:brightness-105 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all cursor-pointer transform hover:-translate-y-0.5 active:translate-y-0"
                 >
                   <Send className="w-4 h-4" />
                   <span>SUBMIT & SCHEDULE FREE SITE VISIT</span>
                 </button>
 
-                <p className="text-[10px] text-stone-400 text-center flex items-center justify-center gap-1 mt-2">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                <p className="text-[10px] text-stone-500 font-medium text-center flex items-center justify-center gap-1.5 mt-2">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
                   <span>100% Privacy Protected. No spam or third-party sharing.</span>
                 </p>
 

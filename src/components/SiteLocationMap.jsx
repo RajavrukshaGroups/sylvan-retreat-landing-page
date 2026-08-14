@@ -55,7 +55,7 @@ export const SiteLocationMap = ({ onOpenEnquiry }) => {
           <div className="inline-flex items-center justify-center gap-3 mb-2">
             <span className="h-[1px] w-8 bg-[#011403ff]"></span>
             <h2 className="text-2xl sm:text-4xl font-serif font-bold text-[#011403ff] tracking-wider uppercase">
-              LOCATION & SITE MAP
+              LOCATION & ROAD MAP
             </h2>
             <span className="h-[1px] w-8 bg-[#011403ff]"></span>
           </div>
@@ -74,7 +74,7 @@ export const SiteLocationMap = ({ onOpenEnquiry }) => {
               <div className="flex items-center gap-2">
                 <Navigation className="w-5 h-5 text-[#e6c278]" />
                 <span className="text-sm font-serif font-bold text-white uppercase tracking-wider">
-                  MASTER CONNECTIVITY & SITE MAP
+                  MASTER CONNECTIVITY & ROAD MAP
                 </span>
               </div>
               <button
@@ -215,8 +215,8 @@ export const SiteLocationMap = ({ onOpenEnquiry }) => {
             </div>
 
             {/* Enlarged Map Canvas Container */}
-            <div className="flex-1 overflow-auto rounded-xl border border-[#e6c278]/30 bg-[#e8f1f5] p-2 flex items-center justify-center">
-             <img src={sitema} className='object-cover h-full w-full'/>
+            <div className="flex-1 overflow-auto rounded-xl border border-[#e6c278]/30 bg-[#e8f1f5] p-2">
+             <img src={sitema} className="block w-full h-auto" alt="Site Map" />
             </div>
 
             {/* Modal Bottom CTAs */}

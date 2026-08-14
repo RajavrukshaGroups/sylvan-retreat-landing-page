@@ -15,19 +15,19 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
   const getIcon = (iconName) => {
     switch (iconName) {
       case 'Footprints':
-        return <Footprints className="w-6 h-6 text-[#e6c278]" />;
+        return <Footprints className="w-6 h-6 text-[#154726]" />;
       case 'Smile':
-        return <Smile className="w-6 h-6 text-[#e6c278]" />;
+        return <Smile className="w-6 h-6 text-[#154726]" />;
       case 'Droplet':
-        return <Droplet className="w-6 h-6 text-[#e6c278]" />;
+        return <Droplet className="w-6 h-6 text-[#154726]" />;
       case 'Waves':
-        return <Waves className="w-6 h-6 text-[#e6c278]" />;
+        return <Waves className="w-6 h-6 text-[#154726]" />;
       case 'Shield':
-        return <Shield className="w-6 h-6 text-[#e6c278]" />;
+        return <Shield className="w-6 h-6 text-[#154726]" />;
       case 'Zap':
-        return <Zap className="w-6 h-6 text-[#e6c278]" />;
+        return <Zap className="w-6 h-6 text-[#154726]" />;
       default:
-        return <Zap className="w-6 h-6 text-[#e6c278]" />;
+        return <Zap className="w-6 h-6 text-[#154726]" />;
     }
   };
 
@@ -36,33 +36,33 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
-          {/* Left Column: AMENITIES (Dark Green Box) */}
-          <div className="lg:col-span-6 bg-[#081a0e] rounded-2xl p-6 sm:p-8 border border-[#e6c278]/40 shadow-xl flex flex-col justify-between">
+          {/* Left Column: AMENITIES (Bright Theme Box) */}
+          <div className="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-xl flex flex-col justify-between">
             <div>
               <div className="text-center mb-8">
                 <div className="inline-flex items-center justify-center gap-3">
-                  <span className="h-[1px] w-6 bg-[#e6c278]"></span>
-                  <h2 className="text-xl sm:text-3xl font-serif font-bold text-[#e6c278] tracking-widest uppercase">
+                  <span className="h-[1px] w-6 bg-[#0a2214]"></span>
+                  <h2 className="text-xl sm:text-3xl font-serif font-bold text-[#0a2214] tracking-widest uppercase">
                     AMENITIES
                   </h2>
-                  <span className="h-[1px] w-6 bg-[#e6c278]"></span>
+                  <span className="h-[1px] w-6 bg-[#0a2214]"></span>
                 </div>
-                <p className="text-xs text-stone-300 mt-1">
+                <p className="text-xs text-stone-600 mt-1 font-medium">
                   World-class eco infrastructure and modern lifestyle conveniences
                 </p>
               </div>
 
               {/* 6 Amenities Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
                 {AMENITIES.map((item) => (
                   <div
                     key={item.id}
-                    className="flex flex-col items-center justify-center text-center p-4 rounded-xl bg-[#0b2415] border border-[#e6c278]/25 hover:border-[#e6c278] transition-all group"
+                    className="flex flex-col items-center justify-center text-center p-4 rounded-xl bg-[#fbf9f4] border border-stone-200 hover:border-[#d96500] hover:bg-orange-50 transition-all group shadow-xs"
                   >
-                    <div className="p-2.5 rounded-full bg-[#081a0e] border border-[#e6c278]/30 group-hover:scale-110 transition-transform mb-2">
+                    <div className="p-2.5 rounded-full bg-white border border-stone-200 group-hover:scale-110 transition-transform mb-2 shadow-xs">
                       {getIcon(item.iconName)}
                     </div>
-                    <span className="text-xs font-semibold text-stone-200 group-hover:text-[#e6c278] transition-colors leading-tight">
+                    <span className="text-xs font-bold text-stone-800 group-hover:text-[#d96500] transition-colors leading-tight">
                       {item.title}
                     </span>
                   </div>
@@ -70,9 +70,9 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
               </div>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-[#e6c278]/20 text-center">
-              <p className="text-xs text-stone-400">
-                ⭐ Electricity, 24/7 Gated Security & Drip Irrigation Line included in every plot
+            <div className="mt-8 pt-4 border-t border-stone-200 text-center">
+              <p className="text-xs font-bold text-stone-500">
+                <span className="text-[#d96500]">⭐</span> Electricity, 24/7 Gated Security & Drip Irrigation Line included in every plot
               </p>
             </div>
           </div>

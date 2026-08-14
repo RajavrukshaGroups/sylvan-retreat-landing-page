@@ -5,14 +5,14 @@ export const SpecialActivities = () => {
   return (
     <section className="py-14 bg-[#f4ebd9]/60 border-y border-[#e6c278]/25">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-row justify-center gap-8">
           {SPECIAL_ACTIVITIES.map((act) => (
             <div
               key={act.id}
               className="bg-white rounded-2xl overflow-hidden border border-[#e6c278]/40 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group"
             >
               {/* Image Container */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-68 overflow-hidden">
                 <img
                   src={act.image}
                   alt={act.title}
