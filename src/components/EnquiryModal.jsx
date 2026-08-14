@@ -3,6 +3,7 @@ import { X, Calendar, Clock, MapPin, Send } from 'lucide-react';
 import { PROJECT_INFO } from '../data/projectData';
 import { submitEnquiry } from '../services/api';
 
+
 export const EnquiryModal = ({
   isOpen,
   onClose,
