@@ -24,3 +24,37 @@
     }
   }
 }
+
+@font-face {
+  font-family: "Kepler Standard";
+  src: url("./assets/fonts/KeplerStd-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kepler Standard";
+  src: url("./assets/fonts/KeplerStd-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kepler Standard";
+  src: url("./assets/fonts/KeplerStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reusable Kepler Standard class */
+/* .font-kepler {
+  font-family: "Kepler Standard", serif;
+} */
+
+.font-kepler {
+  font-family: "Kepler Standard", serif;
+  font-style: italic;
+}

@@ -22,9 +22,9 @@ export const PROJECT_INFO = {
   subheading: 'Own your piece of nature in North Bangalore. Peaceful surroundings, rich land, and a sustainable lifestyle – all within your reach for around',
   budget: '₹50 LAKHS*',
   budgetLabel: 'BUDGET AROUND',
-  phoneNumber: '+919900009487',
-  displayPhone: '+91 99000 09487',
-  phone: '+919900009487',
+  phoneNumber: '+918549955955',
+  displayPhone: '+91 85499 55955',
+  phone: '+918549955955',
   email: 'info@thesamrudhi.com',
   location: 'Doddaballapur, North Bangalore',
   siteAddress: 'Doddaballapur, North Bangalore (Near SH-09 & STRR)',
@@ -120,60 +120,155 @@ export const HIGHLIGHTS: HighlightItem[] = [
 export const SPECIAL_ACTIVITIES = [
   {
     id: '1',
-    title: 'Beekeeping',
-    subtitle: 'Sustainable Honey Farming',
-    description: 'Ethical honey production supports biodiversity while generating high-value products like raw honey, beeswax, and royal jelly. The global honey market is booming, offering lucrative opportunities for local farmers.',
-    image: IMAGES.beekeepingHoney,
+    title: 'Mango Cultivation',
+    subtitle: 'High-Value Orchard Farming',
+    description:
+      'Premium mango varieties such as Malgova, Totapuri, Mallika and Banganapalli offer strong market demand, excellent nutritional value, and long-term orchard potential.',
+    image: IMAGES.mangoHarvest,
   },
-  // {
-  //   id: '2',
-  //   title: 'Animal Husbandry',
-  //   subtitle: 'Ethical Livestock Care',
-  //   description: 'A well-managed livestock farm ensures quality dairy and wool production, creating sustainable income sources. The demand for organic, ethically raised products is rising, providing economic stability for farmers.',
-  //   image: IMAGES.cattleGrazing,
-  // },
+  {
+    id: '2',
+    title: 'Jackfruit Cultivation',
+    subtitle: 'Nutrient-Rich Traditional Farming',
+    description:
+      'Jackfruit is a high-yield traditional crop valued for its nutritional benefits, fiber content, and growing demand in both fresh and processed food markets.',
+    image: IMAGES.jackfruitTree,
+  },
   {
     id: '3',
-    title: 'Mango Farming',
-    subtitle: 'Premium Organic Harvest',
-    description: 'Organically grown mangoes fetch premium prices in both local and export markets. Value-added products like dried mango, pulp, and juice increase profitability, ensuring long-term financial sustainability.',
-    image: IMAGES.mangoHarvest,
+    title: 'Guava Cultivation',
+    subtitle: 'High-Yield Fruit Farming',
+    description:
+      'Guava is well suited for productive orchard cultivation and is valued for its Vitamin C content, antioxidants, and consistent market demand.',
+    image: IMAGES.guavaTree,
+  },
+  {
+    id: '4',
+    title: 'Papaya Cultivation',
+    subtitle: 'Fast-Growing Fruit Crop',
+    description:
+      'Papaya offers relatively quick harvesting cycles, strong local demand, and is widely valued for its nutritional and digestive benefits.',
+    image: IMAGES.papayaTree,
+  },
+  {
+    id: '5',
+    title: 'Chiku Cultivation',
+    subtitle: 'Sweet Tropical Orchard',
+    description:
+      'Chiku or Sapota is a popular tropical fruit crop valued for its sweet taste, nutritional content, and reliable local market demand.',
+    image: IMAGES.chikuTree,
+  },
+  {
+    id: '6',
+    title: 'Moringa Cultivation',
+    subtitle: 'Nutrient-Rich Farm Crop',
+    description:
+      'Moringa is known for its high nutritional value and versatile usage, making it a valuable addition to sustainable farmland cultivation.',
+    image: IMAGES.moringaTree,
   },
 ];
 
 export const AMENITIES: Amenity[] = [
-  //{ id: '1', title: 'Paver Pathways', iconName: 'Footprints' },
-  //{ id: '2', title: 'Playground', iconName: 'Smile' },
-  { id: '3', title: 'Private Water Supply', iconName: 'Droplet' },
-  { id: '4', title: 'Water System', iconName: 'Waves' },
-  { id: '5', title: 'Security & Fencing', iconName: 'Shield' },
-  { id: '6', title: 'Electricity', iconName: 'Zap' },
+  {
+    id: "1",
+    title: "Individual Water Connectivity",
+    iconName: "Droplet",
+  },
+  {
+    id: "2",
+    title: "Electricity Supply",
+    iconName: "Zap",
+  },
+  {
+    id: "3",
+    title: "Sewage Lines",
+    iconName: "Waves",
+  },
+  {
+    id: "4",
+    title: "20 ft Black Top Roads",
+    iconName: "Route",
+  },
+  {
+    id: "5",
+    title: "24x7 Maintenance Staff",
+    iconName: "Users",
+  },
+  {
+    id: "6",
+    title: "Gated Security & Fencing",
+    iconName: "Shield",
+  },
+  {
+    id: "7",
+    title: "Drip Irrigation System",
+    iconName: "Sprout",
+  },
+  {
+    id: "8",
+    title: "Farmhouse-Ready Infrastructure",
+    iconName: "Home",
+  },
 ];
 
 export const WHY_CHOOSE_US = [
   {
-    id: '1',
-    title: 'Expertise in Agriculture',
-    description: 'Our team of agricultural experts is ready to assist and advise you in every step of your farming journey.',
-    iconName: 'Sprout',
+    id: "1",
+    title: "Expertise in Agriculture",
+    description:
+      "Our agricultural expertise supports productive cultivation and helps owners make the most of their farmland.",
+    iconName: "Sprout",
   },
   {
-    id: '2',
-    title: 'Investment Potential',
-    description: "Farmland is not just a dream; it's a sound financial investment with growing demand in the market.",
-    iconName: 'TrendingUp',
+    id: "2",
+    title: "Investment Potential",
+    description:
+      "Farmland combines lifestyle value with long-term investment potential in a rapidly developing region.",
+    iconName: "TrendingUp",
   },
   {
-    id: '3',
-    title: 'Sustainability',
-    description: "We're committed to sustainable farming practices and environmental conservation.",
-    iconName: 'Globe',
+    id: "3",
+    title: "Sustainable & Organic Living",
+    description:
+      "Enjoy a healthier lifestyle with opportunities for organic fruit cultivation and sustainable farming practices.",
+    iconName: "Globe",
   },
   {
-    id: '4',
-    title: 'Legal Compliance',
-    description: 'Hassle-free process in terms of your documentation that carries from our expert team members.',
-    iconName: 'FileCheck',
+    id: "4",
+    title: "Clear & Hassle-Free Ownership",
+    description:
+      "Clear documentation and professional assistance help provide a transparent and hassle-free ownership experience.",
+    iconName: "FileCheck",
+  },
+
+  // New Requirements
+  {
+    id: "5",
+    title: "Secure & Professionally Maintained",
+    description:
+      "Secure, well-maintained farmland supported by professional staff for regular upkeep, security, and hassle-free ownership.",
+    iconName: "ShieldCheck",
+  },
+  {
+    id: "6",
+    title: "Ready-to-Use Infrastructure",
+    description:
+      "Essential infrastructure including road access, water, electricity, and sewage facilities supports convenient farmhouse development.",
+    iconName: "Construction",
+  },
+  {
+    id: "7",
+    title: "Healthy Farm Lifestyle",
+    description:
+      "Experience a greener lifestyle surrounded by nature with opportunities to grow fresh fruits and practice organic farming.",
+    iconName: "Heart",
+  },
+  {
+    id: "8",
+    title: "Strategic North Bangalore Investment",
+    description:
+      "Invest in the fast-developing Doddaballapura corridor of North Bangalore, supported by expanding infrastructure and major upcoming developments.",
+    iconName: "MapPin",
   },
 ];
 
@@ -182,7 +277,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g1',
     title: 'Panoramic Farmland Vistas',
     category: 'Farmland',
-    imageUrl:galleryImg1,
+    imageUrl: galleryImg1,
     description: 'Expansive 58-acre rich agricultural land in North Bangalore.',
   },
   {
@@ -227,7 +322,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     imageUrl: galImg3,
     description: 'Peaceful sunset views over scenic Doddaballapur countryside.',
   },
-   {
+  {
     id: 'g8',
     title: 'Sunset Over Sylvan Retreat',
     category: 'Farmland',

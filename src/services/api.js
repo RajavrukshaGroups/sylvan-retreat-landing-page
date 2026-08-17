@@ -1,6 +1,5 @@
-
 //const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-const API_BASE_URL ='https://rrplserver.rajavrukshagroup.in'
+const API_BASE_URL = "https://rrplserver.rajavrukshagroup.in";
 /**
  * Submits enquiry data to the backend endpoint.
  * @param {Object} formData
@@ -11,15 +10,15 @@ const API_BASE_URL ='https://rrplserver.rajavrukshagroup.in'
  */
 export const submitEnquiry = async (formData) => {
   const response = await fetch(`${API_BASE_URL}/sylvan-retreat-enquiry`, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       name: formData.name,
       email: formData.email,
       phone: formData.phone,
-      message: formData.message || '',
+      message: formData.message || "",
     }),
   });
 

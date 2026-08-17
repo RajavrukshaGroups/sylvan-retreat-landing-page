@@ -1,18 +1,43 @@
-import React from 'react';
-import { Sprout, TrendingUp, Globe, FileCheck } from 'lucide-react';
-import { WHY_CHOOSE_US } from '../data/projectData';
+import React from "react";
+import {
+  Sprout,
+  TrendingUp,
+  Globe,
+  FileCheck,
+  ShieldCheck,
+  Construction,
+  Heart,
+  MapPin,
+} from "lucide-react";
+import { WHY_CHOOSE_US } from "../data/projectData";
 
 export const WhyChooseUs = () => {
   const getIcon = (iconName) => {
     switch (iconName) {
-      case 'Sprout':
+      case "Sprout":
         return <Sprout className="w-8 h-8 text-[#9b7328]" />;
-      case 'TrendingUp':
+
+      case "TrendingUp":
         return <TrendingUp className="w-8 h-8 text-[#9b7328]" />;
-      case 'Globe':
+
+      case "Globe":
         return <Globe className="w-8 h-8 text-[#9b7328]" />;
-      case 'FileCheck':
+
+      case "FileCheck":
         return <FileCheck className="w-8 h-8 text-[#9b7328]" />;
+
+      case "ShieldCheck":
+        return <ShieldCheck className="w-8 h-8 text-[#9b7328]" />;
+
+      case "Construction":
+        return <Construction className="w-8 h-8 text-[#9b7328]" />;
+
+      case "Heart":
+        return <Heart className="w-8 h-8 text-[#9b7328]" />;
+
+      case "MapPin":
+        return <MapPin className="w-8 h-8 text-[#9b7328]" />;
+
       default:
         return <Sprout className="w-8 h-8 text-[#9b7328]" />;
     }
@@ -21,7 +46,6 @@ export const WhyChooseUs = () => {
   return (
     <section className="py-16 bg-[#f5f1e8] border-t border-[#e6c278]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
@@ -32,7 +56,8 @@ export const WhyChooseUs = () => {
             <span className="h-[1px] w-8 bg-[#9b7328]"></span>
           </div>
           <p className="text-stone-600 text-sm sm:text-base max-w-xl mx-auto">
-            Your trusted partner in securing high-yield, clear-title agricultural farmland in North Bangalore.
+            Your trusted partner in securing high-yield, clear-title
+            agricultural farmland in North Bangalore.
           </p>
         </div>
 
@@ -55,7 +80,6 @@ export const WhyChooseUs = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

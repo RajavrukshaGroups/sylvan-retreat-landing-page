@@ -11,6 +11,13 @@ import HeroImg2 from "../assets/images/hero-2.png"
 import galImg1 from "../assets/images/gal-10.png"
 import gallImg1 from "../assets/images/gal-1.png"
 import galImg2 from "../assets/images/gal-2.png"
+import mangoHarvest from "../assets/images/mango_orchard.webp"
+import jackfruitTree from "../assets/images/jackfruit_cultivation.webp"
+import guavaTree from "../assets/images/guava.webp";
+import chikuTree from "../assets/images/sapota.webp";
+import papayaTree from "../assets/images/pappaya.webp";
+import moringaTree from "../assets/images/moringa.webp";
+
 
 
 export const IMAGES = {
@@ -19,11 +26,18 @@ export const IMAGES = {
   heroBg2: HeroImg2,
   heroBgSlides: [HeroImg2, HeroImg1],
   woodenHouse: galImg1,
-  mangoHarvest: mangoHarvestImg,
+  // mangoHarvest: mangoHarvestImg,
   beekeepingHoney: honeyImg,
   cattleGrazing: cattleImg,
   droneThumb: galImg1,
-  
+
+  mangoHarvest: mangoHarvest,
+  jackfruitTree: jackfruitTree,
+  guavaTree: guavaTree,
+  papayaTree: papayaTree,
+  chikuTree: chikuTree,
+  moringaTree: moringaTree,
+
   // Gallery images with serene farmland vistas
   gallery1: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80', // Golden farmland rows
   gallery2: 'https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=1200&q=80', // Coconut plantation path

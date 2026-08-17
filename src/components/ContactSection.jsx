@@ -144,7 +144,7 @@ export const ContactSection = () => {
             </div>
 
             {/* Free Cab Pickup Highlight Banner */}
-            <div className="bg-[#fff8ea] text-[#154726] p-5 rounded-2xl border border-[#d96500]/30 shadow-lg flex items-center gap-4">
+            {/* <div className="bg-[#fff8ea] text-[#154726] p-5 rounded-2xl border border-[#d96500]/30 shadow-lg flex items-center gap-4">
               <div className="p-3 bg-white rounded-xl text-[#d96500] border border-[#d96500]/20 shrink-0">
                 <Calendar className="w-6 h-6" />
               </div>
@@ -156,7 +156,7 @@ export const ContactSection = () => {
                   We provide free luxury AC cab pick-up & drop from your doorstep anywhere in Bangalore for weekend site visits.
                 </p>
               </div>
-            </div>
+            </div> */}
 
           </div>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Footprints,
   Smile,
@@ -7,25 +7,47 @@ import {
   Shield,
   Zap,
   Play,
-} from 'lucide-react';
-import { AMENITIES } from '../data/projectData';
-import { IMAGES } from '../data/images';
+  Route,
+  Users,
+  Sprout,
+  Home,
+} from "lucide-react";
+import { AMENITIES } from "../data/projectData";
+import { IMAGES } from "../data/images";
 
 export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
   const getIcon = (iconName) => {
     switch (iconName) {
-      case 'Footprints':
+      case "Footprints":
         return <Footprints className="w-6 h-6 text-[#154726]" />;
-      case 'Smile':
+
+      case "Smile":
         return <Smile className="w-6 h-6 text-[#154726]" />;
-      case 'Droplet':
+
+      case "Droplet":
         return <Droplet className="w-6 h-6 text-[#154726]" />;
-      case 'Waves':
+
+      case "Waves":
         return <Waves className="w-6 h-6 text-[#154726]" />;
-      case 'Shield':
+
+      case "Shield":
         return <Shield className="w-6 h-6 text-[#154726]" />;
-      case 'Zap':
+
+      case "Zap":
         return <Zap className="w-6 h-6 text-[#154726]" />;
+
+      case "Route":
+        return <Route className="w-6 h-6 text-[#154726]" />;
+
+      case "Users":
+        return <Users className="w-6 h-6 text-[#154726]" />;
+
+      case "Sprout":
+        return <Sprout className="w-6 h-6 text-[#154726]" />;
+
+      case "Home":
+        return <Home className="w-6 h-6 text-[#154726]" />;
+
       default:
         return <Zap className="w-6 h-6 text-[#154726]" />;
     }
@@ -35,7 +57,6 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
     <section id="amenities" className="py-16 bg-[#fbf9f4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
           {/* Left Column: AMENITIES (Bright Theme Box) */}
           <div className="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-xl flex flex-col justify-between">
             <div>
@@ -48,7 +69,8 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
                   <span className="h-[1px] w-6 bg-[#0a2214]"></span>
                 </div>
                 <p className="text-xs text-stone-600 mt-1 font-medium">
-                  World-class eco infrastructure and modern lifestyle conveniences
+                  Essential infrastructure for secure, convenient and
+                  farmhouse-ready ownership
                 </p>
               </div>
 
@@ -71,8 +93,10 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
             </div>
 
             <div className="mt-8 pt-4 border-t border-stone-200 text-center">
-              <p className="text-xs font-bold text-stone-500">
-                <span className="text-[#d96500]">⭐</span> Electricity, 24/7 Gated Security & Drip Irrigation Line included in every plot
+              <p className="text-xs font-bold text-stone-500 leading-relaxed">
+                <span className="text-[#d96500]">⭐</span> Essential
+                infrastructure including water, electricity, sewage, internal
+                roads, security and irrigation support planned for every plot.
               </p>
             </div>
           </div>
@@ -88,7 +112,7 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
                 <span className="h-[1px] w-6 bg-[#9b7328]"></span>
               </div>
               <p className="text-xs text-stone-600 mt-1">
-                View 58-Acre Samrudhi Sylvan Retreat
+                View 5 Acres Samrudhi Sylvan Retreat
               </p>
             </div>
 
@@ -104,7 +128,6 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors flex flex-col items-center justify-center p-4 text-center">
-                
                 {/* Play Button */}
                 <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/20 backdrop-blur-md border-2 border-white flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-[#e6c278] group-hover:border-[#0a2214] transition-all duration-300">
                   <Play className="w-7 h-7 sm:w-9 sm:h-9 text-white group-hover:text-[#0a2214] fill-current ml-1" />
@@ -116,7 +139,6 @@ export const AmenitiesAndVideo = ({ onOpenVideoModal }) => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -1,32 +1,23 @@
-import React from 'react';
-import Logo from "../assets/images/samrudhi-logo.png"
+import React from "react";
+import Logo from "../assets/images/samrudhi-logo.png";
 
 export const SamrudhiLogo = ({
-  className = 'h-10',
-  textColor = '#ffffff',
+  className = "h-10",
+  textColor = "#ffffff",
   showTagline = true,
 }) => {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      
       <img src={Logo} alt="samrudhi logo" className="h-16 w-auto" />
-      <div className="flex flex-col justify-center text-left leading-tight">
-        <span
-          className="font-serif font-extrabold tracking-widest text-lg sm:text-xl uppercase drop-shadow-sm text-[#0e2108ff]"
-          // style={{ color: textColor }}
-        >
+      <div className="flex flex-col justify-center text-left">
+        <span className="font-serif font-extrabold tracking-widest text-lg sm:text-xl uppercase drop-shadow-sm text-[#0e2108ff] leading-none">
           SAMRUDHI
         </span>
-        <span className="font-serif font-medium tracking-[0.2em] text-xs sm:text-sm text-[#bb7e05ff] uppercase">
-          SYLVAN RETREAT
+
+        <span className="font-kepler font-semibold tracking-[0.03em] text-base sm:text-lg text-[#bb7e05ff] leading-none mt-0.5">
+          Sylvan Retreat
         </span>
-        {/* {showTagline && (
-          <span className="text-[9px] sm:text-[10px] text-stone-950 tracking-wider font-light uppercase mt-0.5 opacity-90">
-            Doddaballapur, North Bangalore
-          </span>
-        )} */}
       </div>
     </div>
   );
 };
-

@@ -102,7 +102,7 @@ export const Footer = ({ onOpenPrivacy }) => {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href={`https://wa.me/919900009487?text=${encodeURIComponent('Hi, I am interested in Samrudhi Sylvan Retreat farmland plots.')}`}
+                href={`https://wa.me/918549955955?text=${encodeURIComponent('Hi, I am interested in Samrudhi Sylvan Retreat farmland plots.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-stone-800 hover:bg-[#e6c278] hover:text-[#0a2214] flex items-center justify-center transition-colors text-stone-300"
