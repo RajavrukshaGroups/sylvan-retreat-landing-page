@@ -21,7 +21,7 @@ import { SiteHighlightSection } from "./components/SiteHighlightSection";
 
 export default function App() {
   const [isRegistered, setIsRegistered] = useState(() => {
-    return localStorage.getItem("sylvan_registered") === "true";
+    return sessionStorage.getItem("sylvan_registered") === "true";
   });
 
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
@@ -56,7 +56,7 @@ export default function App() {
   const handleFormSuccess = (data) => {
     console.log("Enquiry received:", data);
     if (!isRegistered) {
-      localStorage.setItem("sylvan_registered", "true");
+      sessionStorage.setItem("sylvan_registered", "true");
       setIsRegistered(true);
     }
     setIsEnquiryModalOpen(false);
