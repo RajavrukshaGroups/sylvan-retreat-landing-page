@@ -114,9 +114,9 @@ export const ProjectHighlights = ({ onOpenEnquiry }) => {
             "Spacious individual farmland plots starting from 6000 sqft onwards, designed for privacy and comfortable farmhouse development.",
         },
         {
-          title: "100% Clear Titles & Individual Survey Numbers",
+          title: "100% Clear Titles",
           detail:
-            "Complete legal transparency with clear title deeds, individual survey numbers, and direct registration.",
+            "Complete legal transparency with clear title deeds and direct registration.",
         },
         {
           title: "24x7 Maintenance Staff",
@@ -139,19 +139,19 @@ export const ProjectHighlights = ({ onOpenEnquiry }) => {
             "No compromise on essential facilities, making the plots ready for your dream farmhouse construction.",
         },
         {
-          title: "Abundant Water Infrastructure & Automated Drip Lines",
+          title: "Abundant Water Infrastructure & Drip Lines",
           detail:
-            "Dedicated estate borewells, natural water recharge systems, and underground automated drip irrigation lines to every plot.",
+            "Dedicated estate borewells, natural water recharge systems, and underground drip irrigation lines to every plot.",
         },
-        {
-          title: "24/7 Gated Security & Complete Perimeter Fencing",
-          detail:
-            "Round-the-clock guarded entry, perimeter fencing, CCTV surveillance, and permanent maintenance support.",
-        },
+        // {
+        //   title: "24/7 Gated Security & Complete Perimeter Fencing",
+        //   detail:
+        //     "Round-the-clock guarded entry, perimeter fencing, CCTV surveillance, and permanent maintenance support.",
+        // },
         {
           title: "Nutrient-Rich Fertile Red Soil",
           detail:
-            "Rich red loam soil suitable for horticulture, fruit plantations, timber trees, vegetables, and sustainable farming.",
+            "Rich red loam soil suitable for horticulture, fruit plantations, vegetables, and sustainable farming.",
         },
       ],
     },
@@ -192,7 +192,7 @@ export const ProjectHighlights = ({ onOpenEnquiry }) => {
         {
           title: "High-Yield Mango & Horticultural Cultivation",
           detail:
-            "Plantations including Malgova, Totapuri, Mallika mangoes, coconuts, passion fruit, and other suitable horticultural crops.",
+            "Plantations including Malgova, Totapuri, Mallika mangoes, coconuts and other suitable horticultural crops.",
         },
         {
           title: "Integrated Farm Activities & Organic Living",

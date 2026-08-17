@@ -22,8 +22,8 @@ export const PROJECT_INFO = {
   subheading: 'Own your piece of nature in North Bangalore. Peaceful surroundings, rich land, and a sustainable lifestyle – all within your reach for around',
   budget: '₹50 LAKHS*',
   budgetLabel: 'BUDGET AROUND',
-  phoneNumber: '+918549955955',
-  displayPhone: '+91 85499 55955',
+  phoneNumber: '+918549 955 955',
+  displayPhone: '+91 8549 955 955',
   phone: '+918549955955',
   email: 'info@thesamrudhi.com',
   location: 'Doddaballapur, North Bangalore',
@@ -66,7 +66,7 @@ export const LOCATION_ADVANTAGES: LocationAdvantage[] = [
 ];
 
 export const LOCATION_BENEFITS = [
-  { id: '1', title: 'State Highway-09', time: '1 Min', distance: 'Adjacent', iconName: 'Compass' },
+  { id: '1', title: 'State Highway-09', time: '5 Min', distance: 'Adjacent', iconName: 'Compass' },
   { id: '2', title: 'KIAL Int Airport', time: '25 Mins', distance: '28 KM', iconName: 'Plane' },
   { id: '3', title: 'Ghati Subramanya', time: '10 Mins', distance: '6 KM', iconName: 'Sparkles' },
   { id: '4', title: 'KHIR City & STRR', time: '15 Mins', distance: '12 KM', iconName: 'Navigation' },

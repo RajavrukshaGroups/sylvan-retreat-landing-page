@@ -39,10 +39,10 @@ export const SpecialActivities = () => {
                   {act.description}
                 </p>
 
-                <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-[#9b7328]">
+                {/* <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-[#9b7328]">
                   <span>Integrated Farm Feature</span>
                   <span>100% Organic</span>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

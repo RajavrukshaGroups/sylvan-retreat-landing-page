@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Phone,
   Mail,
@@ -9,24 +9,24 @@ import {
   Calendar,
   MessageSquare,
   ShieldCheck,
-} from 'lucide-react';
-import { PROJECT_INFO } from '../data/projectData';
-import { submitEnquiry } from '../services/api';
+} from "lucide-react";
+import { PROJECT_INFO } from "../data/projectData";
+import { submitEnquiry } from "../services/api";
 
 export const ContactSection = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    plotInterest: '20 Guntas (Half Acre)',
-    message: '',
+    name: "",
+    phone: "",
+    email: "",
+    plotInterest: "20 Guntas (Half Acre)",
+    message: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       await submitEnquiry({
         name: formData.name,
@@ -39,22 +39,24 @@ export const ContactSection = () => {
       setTimeout(() => {
         setIsSubmitted(false);
         setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          plotInterest: '20 Guntas (Half Acre)',
-          message: '',
+          name: "",
+          phone: "",
+          email: "",
+          plotInterest: "20 Guntas (Half Acre)",
+          message: "",
         });
       }, 5000);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting form:", error);
     }
   };
 
   return (
-    <section id="contact" className="py-16 bg-[#fbf9f4] text-stone-900 border-t border-[#e6c278]/30">
+    <section
+      id="contact"
+      className="py-16 bg-[#fbf9f4] text-stone-900 border-t border-[#e6c278]/30"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
@@ -65,16 +67,15 @@ export const ContactSection = () => {
             <span className="h-[1px] w-8 bg-[#0a2214]"></span>
           </div>
           <p className="text-stone-600 text-medium sm:text-base max-w-xl mx-auto font-normal">
-            Book a complimentary guided site visit with cab pick-up or speak with our farmland investment consultants today.
+            Book a complimentary guided site visit with cab pick-up or speak
+            with our farmland investment consultants today.
           </p>
         </div>
 
         {/* 2-Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
           {/* Left Column: Contact Details & Office (5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
-            
             {/* Direct Connect Box */}
             <div className="bg-white p-6 rounded-3xl border border-stone-200 shadow-xl space-y-6">
               <h3 className="text-lg font-serif font-bold text-[#154726] border-b border-stone-200 pb-3">
@@ -82,7 +83,6 @@ export const ContactSection = () => {
               </h3>
 
               <div className="space-y-4">
-                
                 {/* Phone */}
                 <a
                   href={`tel:${PROJECT_INFO.phone}`}
@@ -93,7 +93,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <span className="text-[11px] text-stone-500 block font-bold uppercase tracking-wider">
-                      Call / WhatsApp Us
+                      Call Us
                     </span>
                     <span className="text-sm font-bold text-stone-900 group-hover:text-[#d96500] transition-colors">
                       {PROJECT_INFO.displayPhone}
@@ -139,7 +139,6 @@ export const ContactSection = () => {
                   <Clock className="w-4 h-4 text-emerald-700 shrink-0" />
                   <span>Office Hours: 9:00 AM – 7:00 PM (Open All Days)</span>
                 </div>
-
               </div>
             </div>
 
@@ -157,7 +156,6 @@ export const ContactSection = () => {
                 </p>
               </div>
             </div> */}
-
           </div>
 
           {/* Right Column: Site Visit & Booking Form (7 Cols) */}
@@ -166,7 +164,8 @@ export const ContactSection = () => {
               BOOK A GUIDED SITE VISIT
             </h3>
             <p className="text-xs text-stone-600 mb-6 font-medium">
-              Fill in your details below. Our team will contact you within 15 minutes to confirm plot availability.
+              Fill in your details below. Our team will contact you within 15
+              minutes to confirm plot availability.
             </p>
 
             {isSubmitted ? (
@@ -176,14 +175,15 @@ export const ContactSection = () => {
                   Thank You for Your Interest!
                 </h4>
                 <p className="text-xs text-stone-700 max-w-md mx-auto">
-                  Our farmland consultant will call you shortly on{' '}
-                  <strong className="text-[#154726]">{formData.phone || 'your phone number'}</strong>{' '}
+                  Our farmland consultant will call you shortly on{" "}
+                  <strong className="text-[#154726]">
+                    {formData.phone || "your phone number"}
+                  </strong>{" "}
                   to arrange your site visit and share price sheets.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
-                
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Full Name */}
                   <div>
@@ -195,7 +195,9 @@ export const ContactSection = () => {
                       required
                       placeholder="Enter your full name"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs"
                     />
                   </div>
@@ -203,14 +205,17 @@ export const ContactSection = () => {
                   {/* Mail / Email */}
                   <div>
                     <label className="block text-xs font-bold text-stone-800 mb-1">
-                      Mail / Email Address <span className="text-red-500">*</span>
+                      Mail / Email Address{" "}
+                      <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="email"
                       required
                       placeholder="name@example.com"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs"
                     />
                   </div>
@@ -230,8 +235,9 @@ export const ContactSection = () => {
                     placeholder="10-digit mobile number"
                     value={formData.phone}
                     onChange={(e) => {
-                      const val = e.target.value.replace(/\D/g, '');
-                      if (val.length <= 10) setFormData({ ...formData, phone: val });
+                      const val = e.target.value.replace(/\D/g, "");
+                      if (val.length <= 10)
+                        setFormData({ ...formData, phone: val });
                     }}
                     className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs"
                   />
@@ -246,7 +252,9 @@ export const ContactSection = () => {
                     rows={4}
                     placeholder="Write your message or inquiry details here..."
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     className="w-full px-3.5 py-3 bg-[#fbf9f4] border border-stone-300 rounded-xl text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#d96500] focus:ring-1 focus:ring-[#d96500]/30 transition-all shadow-xs resize-none"
                   />
                 </div>
@@ -261,16 +269,14 @@ export const ContactSection = () => {
 
                 <p className="text-[10px] text-stone-500 font-medium text-center flex items-center justify-center gap-1.5 mt-2">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
-                  <span>100% Privacy Protected. No spam or third-party sharing.</span>
+                  <span>
+                    100% Privacy Protected. No spam or third-party sharing.
+                  </span>
                 </p>
-
               </form>
             )}
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
