@@ -18,6 +18,7 @@ import { PrivacyPolicyModal } from "./components/PrivacyPolicyModal";
 import { Calendar, Phone, CheckCircle2 } from "lucide-react";
 import { PROJECT_INFO } from "./data/projectData";
 import { SiteHighlightSection } from "./components/SiteHighlightSection";
+import StrategicLocation from "./components/StrategicLocation";
 
 export default function App() {
   const [isRegistered, setIsRegistered] = useState(() => {
@@ -84,6 +85,7 @@ export default function App() {
 
         {/* Project Highlights (58 Acres, Wooden House, Mango, Fertile soil, Water, Security) + 3 Images */}
         <ProjectHighlights />
+        <StrategicLocation />
 
         {/* 3 Featured Activity Cards (Beekeeping, Animal Husbandry, Mango Farming) */}
         <SpecialActivities />

@@ -202,51 +202,51 @@ export const ProjectHighlights = ({ onOpenEnquiry }) => {
       ],
     },
 
-    {
-      title: "Strategic North Bangalore Location",
-      points: [
-        {
-          title: "Doddaballapura Growth Corridor",
-          detail:
-            "Located in the fast-developing North Bangalore corridor with strong connectivity and long-term growth potential.",
-        },
-        {
-          title: "ITIR / SEZ, KIADB, KHIR & KWIN City Projects",
-          detail:
-            "Major upcoming commercial, industrial, and technology developments are located within the surrounding growth belt.",
-        },
-        {
-          title: "Ghati Subramanya Temple",
-          detail:
-            "A prominent spiritual and cultural landmark located close to the project.",
-        },
-        {
-          title: "Sir M. Visvesvaraya Check Dam",
-          detail:
-            "A notable nearby water resource adding ecological and scenic value to the surrounding region.",
-        },
-        {
-          title: "Rashtrothana Go Shala",
-          detail:
-            "A nearby cultural and heritage destination associated with traditional cattle conservation.",
-        },
-        {
-          title: "Makali Durga Hill & Nandi Hills",
-          detail:
-            "Popular trekking and weekend destinations conveniently accessible from the project location.",
-        },
-        {
-          title: "Excellent Regional Connectivity",
-          detail:
-            "Convenient access to SH-09, STRR, Doddaballapura town, North Bangalore employment hubs, and Kempegowda International Airport.",
-        },
-        {
-          title: "Long-Term Farmhouse Investment Potential",
-          detail:
-            "With comparatively larger land availability and expanding infrastructure, Doddaballapura is emerging as a preferred farmhouse and managed farmland destination.",
-        },
-      ],
-    },
+    // {
+    //   title: "Strategic North Bangalore Location",
+    //   points: [
+    //     {
+    //       title: "Doddaballapura Growth Corridor",
+    //       detail:
+    //         "Located in the fast-developing North Bangalore corridor with strong connectivity and long-term growth potential.",
+    //     },
+    //     {
+    //       title: "ITIR / SEZ, KIADB, KHIR & KWIN City Projects",
+    //       detail:
+    //         "Major upcoming commercial, industrial, and technology developments are located within the surrounding growth belt.",
+    //     },
+    //     {
+    //       title: "Ghati Subramanya Temple",
+    //       detail:
+    //         "A prominent spiritual and cultural landmark located close to the project.",
+    //     },
+    //     {
+    //       title: "Sir M. Visvesvaraya Check Dam",
+    //       detail:
+    //         "A notable nearby water resource adding ecological and scenic value to the surrounding region.",
+    //     },
+    //     {
+    //       title: "Rashtrothana Go Shala",
+    //       detail:
+    //         "A nearby cultural and heritage destination associated with traditional cattle conservation.",
+    //     },
+    //     {
+    //       title: "Makali Durga Hill & Nandi Hills",
+    //       detail:
+    //         "Popular trekking and weekend destinations conveniently accessible from the project location.",
+    //     },
+    //     {
+    //       title: "Excellent Regional Connectivity",
+    //       detail:
+    //         "Convenient access to SH-09, STRR, Doddaballapura town, North Bangalore employment hubs, and Kempegowda International Airport.",
+    //     },
+    //     {
+    //       title: "Long-Term Farmhouse Investment Potential",
+    //       detail:
+    //         "With comparatively larger land availability and expanding infrastructure, Doddaballapura is emerging as a preferred farmhouse and managed farmland destination.",
+    //     },
+    //   ],
+    // },
   ];
 
   return (
