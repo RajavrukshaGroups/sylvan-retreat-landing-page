@@ -5,13 +5,30 @@ export const PrivacyPolicyModal = ({ isOpen, onClose }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      // Change URL to the privacy policy route
+      window.history.pushState({}, '', '/farm-land-doddaballapur/privacy-policy/');
     } else {
       document.body.style.overflow = 'unset';
+      // Revert URL to home if it is currently the privacy policy route
+      if (window.location.pathname === '/farm-land-doddaballapur/privacy-policy/') {
+        window.history.pushState({}, '', '/');
+      }
     }
+
+    // Handle browser back button to close the modal
+    const handlePopState = () => {
+      if (isOpen) {
+        onClose();
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
     return () => {
       document.body.style.overflow = 'unset';
+      window.removeEventListener('popstate', handlePopState);
     };
-  }, [isOpen]);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -37,7 +54,9 @@ export const PrivacyPolicyModal = ({ isOpen, onClose }) => {
 
         {/* Content */}
         <div className="p-6 sm:p-8 overflow-y-auto text-sm text-stone-700 space-y-6">
-          <p className="font-bold text-stone-900">Last Updated: August 14, 2026</p>
+          <p className="font-bold text-stone-900">
+            Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+          </p>
           
           <p>
             At <strong>Samrudhi Sylvan Retreat</strong>, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, store, and protect your information when you visit or interact with our website and enquiry services.
