@@ -28,8 +28,22 @@ export default function App() {
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
   const [modalInterest, setModalInterest] = useState(undefined);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(() => {
+    return window.location.pathname === '/farm-land-doddaballapur/privacy-policy/';
+  });
   const [toast, setToast] = useState(null);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (window.location.pathname === '/farm-land-doddaballapur/privacy-policy/') {
+        setIsPrivacyModalOpen(true);
+      } else {
+        setIsPrivacyModalOpen(false);
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   useEffect(() => {
     if (isRegistered) return;
