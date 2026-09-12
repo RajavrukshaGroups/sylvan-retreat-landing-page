@@ -25,7 +25,10 @@ export default function App() {
     return sessionStorage.getItem("sylvan_registered") === "true";
   });
 
-  const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
+  const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(() => {
+    const isReg = sessionStorage.getItem("sylvan_registered") === "true";
+    return !isReg;
+  });
   const [modalInterest, setModalInterest] = useState(undefined);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(() => {
@@ -46,14 +49,9 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (isRegistered) return;
-
-    const timer = setTimeout(() => {
-      setModalInterest(undefined);
+    if (!isRegistered) {
       setIsEnquiryModalOpen(true);
-    }, 2000);
-
-    return () => clearTimeout(timer);
+    }
   }, [isRegistered]);
 
   const triggerToast = (message) => {

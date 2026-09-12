@@ -54,24 +54,13 @@ export const EnquiryModal = ({
   return (
     <div
       className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-fadeIn"
-      onClick={onClose}
     >
       <div
         className="bg-[#0b2415] border border-[#e6c278]/50 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        {" "}
         {/* Top Gold Border Accent */}
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#9b7328] via-[#e6c278] to-[#9b7328]" />
-        {/* Close Button */}
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center text-stone-300 hover:text-white rounded-full bg-[#081a0e] border border-stone-700 hover:border-[#e6c278] transition-all cursor-pointer"
-          aria-label="Close enquiry form"
-        >
-          <X className="w-5 h-5" />
-        </button>
         <div>
           <div className="text-center mb-6">
             <span className="text-[11px] font-semibold text-[#e6c278] uppercase tracking-widest block mb-1">
