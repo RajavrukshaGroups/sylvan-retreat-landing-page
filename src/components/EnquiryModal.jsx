@@ -63,14 +63,14 @@ export const EnquiryModal = ({
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#9b7328] via-[#e6c278] to-[#9b7328]" />
         <div>
           <div className="text-center mb-6">
-            <span className="text-[11px] font-semibold text-[#e6c278] uppercase tracking-widest block mb-1">
-              {PROJECT_INFO.title}
-            </span>
-            <h3 className="text-xl sm:text-2xl font-serif font-bold text-white uppercase">
-              {defaultInterest || "BOOK SITE VISIT / ENQUIRE"}
+            {/* <span className="text-[19px] font-semibold text-[#e6c278] uppercase tracking-widest block mb-1">
+              Welcome to SAMRUDHI SYLVAN RETREAT
+            </span> */}
+            <h3 className="text-lg sm:text-lg font-serif font-bold text-[#e6c278] uppercase">
+              {defaultInterest || "Welcome to SAMRUDHI SYLVAN RETREAT"}
             </h3>
             <p className="text-xs text-stone-300 mt-1">
-              Fill in your details for instant availability & site visit details
+              Please submit an enquiry to access the site.
             </p>
           </div>
 
@@ -146,7 +146,7 @@ export const EnquiryModal = ({
             </div>
 
             {/* Shuttle Pickup checkbox */}
-            <div className="flex items-center gap-2 bg-[#07190e] p-3 rounded-lg border border-stone-800">
+            {/* <div className="flex items-center gap-2 bg-[#07190e] p-3 rounded-lg border border-stone-800">
               <input
                 type="checkbox"
                 id="pickup"
@@ -162,7 +162,7 @@ export const EnquiryModal = ({
               >
                 Request Complimentary Cab Pick-Up & Drop from Bangalore
               </label>
-            </div>
+            </div> */}
 
             <button
               type="submit"
