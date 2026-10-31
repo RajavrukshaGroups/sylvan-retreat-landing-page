@@ -22,12 +22,25 @@ import StrategicLocation from "./components/StrategicLocation";
 
 export default function App() {
   const [isRegistered, setIsRegistered] = useState(() => {
-    return sessionStorage.getItem("sylvan_registered") === "true";
+    try {
+      return (
+        sessionStorage.getItem("sylvan_registered") === "true" ||
+        localStorage.getItem("sylvan_registered") === "true"
+      );
+    } catch {
+      return false;
+    }
   });
 
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(() => {
-    const isReg = sessionStorage.getItem("sylvan_registered") === "true";
-    return !isReg;
+    try {
+      const isReg =
+        sessionStorage.getItem("sylvan_registered") === "true" ||
+        localStorage.getItem("sylvan_registered") === "true";
+      return !isReg;
+    } catch {
+      return true;
+    }
   });
   const [modalInterest, setModalInterest] = useState(undefined);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -68,10 +81,13 @@ export default function App() {
 
   const handleFormSuccess = (data) => {
     console.log("Enquiry received:", data);
-    if (!isRegistered) {
+    try {
       sessionStorage.setItem("sylvan_registered", "true");
-      setIsRegistered(true);
+      localStorage.setItem("sylvan_registered", "true");
+    } catch (e) {
+      console.error(e);
     }
+    setIsRegistered(true);
     setIsEnquiryModalOpen(false);
     triggerToast(
       `Thank you ${data.name || ""}! Your enquiry has been submitted successfully.`,
